@@ -1,3 +1,3 @@
 # html-meta
 
-HTML TAGS Template
+HTML META TAGS Template
