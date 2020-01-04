@@ -2,24 +2,47 @@
 <html>
     <head>
         <title>meta</title>
-    <!-- meta tags -->
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="refresh" content="0; url=http://example.com">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            
+            Syntax
+            ================
+            {url}       |  Site URL
+            {icon}      |  Site Icon
+            {title}     |  Site Title
+            {dest}      |  Site Description
+            {author}    |  Name of Site Designer
+            {locale}    |  Site Locale
+            
+            (Bool)      | "yes" / "no"
+            (Color)       | Hexadecimal Color
+            (Style)     | "default" / "black" / "black-translucent"
+        
+        -->
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://example.com">
-    <meta property="og:title" content="<title name>">
-    <meta property="og:description"content="<description>">
-    <meta property="og:image" content="<image>">
-    <meta name="apple-mobile-web-app-capable" content="<capable>">
-    <meta name="apple-mobile-web-app-status-bar-style" content="<style>">
-    <meta name="apple-mobile-web-app-title" content="<title name>">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="<hex>">
-    <meta name="application-name" content="<name>">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="refresh" content="0; url={url}">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="apple-mobile-web-app-capable" content="(Bool)">
+        <meta name="apple-mobile-web-app-status-bar-style" content="(Style)">
+        <meta name="apple-mobile-web-app-title" content="{url}">
+        <meta name="mobile-web-app-capable" content="(Bool)">
+        <meta name="theme-color" content="(Color)">
+        <meta name="application-name" content="{title}">
+        <meta name="twitter:image:src" content="{icon}">
+        <meta name="twitter:creator" content="{author}">
+        <meta name="twitter:site" content="{url}">
+        <meta name="twitter:title" content="{title}">
+        <meta name="twitter:card" content="{title}">
+        <meta name="og:site_name" content="{title}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{url}">
+        <meta property="og:title" content="{title}">
+        <meta property="og:description"content="{dest}">
+        <meta property="og:image" content="{icon}">
+        <meta property="og:locale" content="{locale}">
     </head>
     <body>
         Hello World!
