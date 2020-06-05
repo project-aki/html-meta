@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>meta</title>
         <!--
-            
-            Syntax
-            ================
+            =====================================
+                      Syntax
+            =====================================
+               Symbol   |  Description
+            =====================================
             {url}       |  Site URL
             {icon}      |  Site Icon
             {title}     |  Site Title
             {dest}      |  Site Description
             {author}    |  Name of Site Designer
             {locale}    |  Site Locale
+            {email}     |  Representative email
+            {keywords}  |  That's what it says
+            {lang}      |  Site language
             
             (Bool)      | "yes" / "no"
-            (Color)       | Hexadecimal Color
+            (Color)     | Hexadecimal Color
             (Style)     | "default" / "black" / "black-translucent"
+            (Boolean)   | "true" / "false"
         
         -->
 
@@ -24,7 +29,8 @@
         <meta http-equiv="refresh" content="0; url={url}">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
+        <!-- Social metas -->
         <meta name="apple-mobile-web-app-capable" content="(Bool)">
         <meta name="apple-mobile-web-app-status-bar-style" content="(Style)">
         <meta name="apple-mobile-web-app-title" content="{url}">
@@ -43,6 +49,47 @@
         <meta property="og:description"content="{dest}">
         <meta property="og:image" content="{icon}">
         <meta property="og:locale" content="{locale}">
+        
+        <!-- HTTP-equiv Tags -->
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        
+        <!-- Meta Tags for HTML pages on Mobile -->
+        <meta name="format-detection" content="telephone=(Bool)"/>
+        <meta name="HandheldFriendly" content="(Boolean)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Optional Meta Tags-->
+        <meta name="distribution" content="web">
+        <meta name="web_author" content="{author}">
+        <meta name="rating" content="general">
+        <meta name="rating" content="safe for kids">
+        <meta name="subject" content="Personal">
+        <meta name="title" content="{title}">
+        <meta name="copyright" content="Copyright 2020">
+        <meta name="reply-to" content="{email}">
+        <meta name="abstract" content="{dest}">
+        <meta name="city" content="{locale}">
+        <meta name="country" content="{locale}">
+        <meta name="distribution" content="global">
+
+        <!-- Search Engine Optimization Meta Tags -->
+        <title>{title}</title>
+        <meta name="description" content="{dest}">
+        <meta name="keywords" content="{keywords}">
+        <meta name="robots" content="index,follow">
+        <meta name="revisit-after" content="7 days">
+        <meta name="distribution" content="web">
+        <meta name="robots" content="noodp">
+        
+        <!-- Recommended Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="language" content="{lang}">
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="author" content="{author}">
+        <meta name="designer" content="{author}">
+        <meta name="publisher" content="{author}">
+        <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/">
     </head>
     <body>
         Hello World!
